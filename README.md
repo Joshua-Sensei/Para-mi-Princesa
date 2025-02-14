@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feliz Día Amor❤</title>
+  <title>Feliz Día Amor</title>
   <style>
     body {
       margin: 0;
@@ -15,7 +15,7 @@
       font-family: 'Arial', sans-serif;
       color: white;
       text-align: center;
-      /* overflow: hidden; */ /* Eliminado para permitir scroll */
+      overflow-x: auto; /* Permite el desplazamiento horizontal */
     }
 
     .container {
@@ -26,6 +26,7 @@
       position: relative;
       margin-top: 20px; /* Margen superior reducido para bajar el contenido */
       z-index: 1; /* Asegura que el contenido esté sobre los efectos */
+      width: 100%; /* Asegura que el contenedor no sea más ancho que la pantalla */
     }
 
     h1 {
@@ -49,6 +50,7 @@
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
+      flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una línea */
     }
 
     .photos img {
@@ -57,25 +59,7 @@
       border-radius: 50%;
       border: 3px solid white;
       object-fit: cover;
-    }
-
-    /* Estilos para las imágenes en los costados */
-    .heart-left, .heart-right {
-      position: absolute;
-      width: 150px; /* Tamaño mediano */
-      height: auto;
-    }
-
-    .heart-left {
-      left: -180px; /* Posición a la izquierda del contenedor */
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .heart-right {
-      right: -180px; /* Posición a la derecha del contenedor */
-      top: 50%;
-      transform: translateY(-50%);
+      margin: 10px; /* Espacio entre las imágenes */
     }
 
     /* Efectos de corazones y rosas */
@@ -121,28 +105,25 @@
 </head>
 <body>
   <div class="container">
-    <!-- Imagen en forma de corazón a la izquierda (fija) -->
-    <img class="heart-left" src="https://i.imgur.com/EvwfAj6.jpeg" alt="Corazón izquierdo">
-    
-    <h1>❤️Feliz Día Amor❤️</h1>
+    <h1>Feliz Día Amor</h1>
     <p>
-      Mi princesa, Feliz dia de San Valentin, estoy haciendo este detalle el 15 de Diciembre para poder enviartelo el dia 14/02, se que es 2 meses antes pero pienso hacer este mensaje web y tambien seguro te estare entregando un cuaderno en la noche cuando nos veamos, que tambien estoy comenzando hacerlo, espero que cuando lo veas te guste, porque lo hago con todo mi amor para ti Merly mi 👸❤️.
-      <br><br> <!-- Separación después de "para ti Merly 👸❤️" -->
-      Cada día a tu lado es un regalo🥰, una nueva razón para sonreír y un motivo más para creer en lo hermoso de la vida. Eres mi refugio, mi inspiración✨ y la luz que ilumina hasta mis días más grises. Sé que peleamos mucho, pero siempre tratamos de arreglarlo, aunque nos cueste lo intentamos. Siempre luchamos, nos reímos, lloramos, sonreímos, pero a pesar de eso aún nos seguimos amando, ya que eres lo unico que quiero en esta vida y perdon por cometer algunos fallos, pero no soy perfecto, pero cuando te dig oque te amo es porque te amo, creeme amor que yo te quiero solo a ti, pero gracias a ti ahora tengo muchas ganas y mucha felicidad.
+      Mi princesa, Feliz dia de San Valentin, estoy haciendo este detalle el 15 de Diciembre para poder enviartelo el dia 14/02, se que es 2 meses antes pero pienso hacer este mensaje web y tambien seguro te estare entregando un cauderno que tambien estoy comenzando hacerlo, espero que cuando lo veas te guste, porque lo hago con todo mi amor para tu Merly mi 👸❤️.
+      <br><br> <!-- Separación después de "para tu Merly 👸❤️" -->
+      Cada día a tu lado es un regalo, una nueva razón para sonreír y un motivo más para creer en lo hermoso de la vida. Eres mi refugio, mi inspiración y la luz que ilumina hasta mis días más grises. Sé que peleamos mucho, pero siempre tratamos de arreglarlo, aunque nos cueste lo intentamos. Siempre luchamos, nos reímos, lloramos, sonreímos, pero a pesar de eso aún nos seguimos amando, ya que eres lo unico que quiero en esat vida y perdon por cometer algunos fallos, pero no soy perfecto , pero gracais a ti ahora tengo muchas ganas y mucha felicidad.
       <br><br> <!-- Separación después de "tengo muchas ganas y mucha felicidad" -->
-      No me imagino estar sin ti, ya que me doleria mucho si algun dia rompemos, ten por seguro que estaria extrañandote todos los dias y pensandote, pero se que no pasara porque por mi parte ya que te amo un monton, mucho mas de lo que te imaginas, espero que este dia podamos pasarlo juntos😍, quizas ya hallamos planeado como pásarlo , ya sea en casa o ya sea en la calle o sabes quizas te proponga ir a la playa y hacer como un picnic , bueno ya tu tambien me diras opciones.
+      No me imagino estar sin ti, ya que me doleria mucho si algun dia rompemos, ten por seguro que esatria extrañandote todos los dias y pensandote, pero se que no pasara porque por mi parte ya que te amo un monton, mucho mas de lo que te imaginas, espero que este dia podamos pasarlo juntos, quizas ya hallamos planeado como pásarlo , ya sea en casa o ya sea en la calle o sabes quizas te proponga ir a la playa y hacer como un picnic , bueno ya tu tambien me diras opciones.
       <br><br>
-      Gracias por estar a mi lado amor💋, porfavor no me dejes, que enverdad tu eres la unica que quiero en mi futuro, te amo mucho con amor tu querido principe Joshua Antony.
+      Gracias por estar a mi lado amor, porfavor no me dejes, que enverdad tu eres la unica que quiero en mi futuro, te amo mucho con amor tu querido principe Joshua Antony.
     </p>
     <div class="photos">
       <img src="https://i.imgur.com/Hw3H9Uj.jpeg" alt="Foto 1">
       <img src="https://i.imgur.com/9B4qF49.jpeg" alt="Foto 2">
       <img src="https://i.imgur.com/OBNq4wS.jpeg" alt="Foto 3">
+      <!-- Imágenes que estaban en los costados -->
+      <img src="https://i.imgur.com/EvwfAj6.jpeg" alt="Corazón izquierdo">
+      <img src="https://i.imgur.com/4oyRX8j.jpeg" alt="Corazón derecho">
     </div>
     <div class="date">01/01/2024 - 14/02/2025</div>
-
-    <!-- Imagen en forma de corazón a la derecha (fija) -->
-    <img class="heart-right" src="https://i.imgur.com/4oyRX8j.jpeg" alt="Corazón derecho">
   </div>
 
   <!-- Efectos de corazones y rosas -->
