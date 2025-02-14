@@ -50,6 +50,7 @@
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
+      flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una línea */
     }
 
     .photos img {
@@ -58,25 +59,7 @@
       border-radius: 50%;
       border: 3px solid white;
       object-fit: cover;
-    }
-
-    /* Estilos para las imágenes en los costados */
-    .heart-left, .heart-right {
-      position: absolute;
-      width: 150px; /* Tamaño mediano */
-      height: auto;
-    }
-
-    .heart-left {
-      left: -180px; /* Posición a la izquierda del contenedor */
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .heart-right {
-      right: -180px; /* Posición a la derecha del contenedor */
-      top: 50%;
-      transform: translateY(-50%);
+      margin: 10px; /* Espacio entre las imágenes */
     }
 
     /* Efectos de corazones y rosas */
@@ -122,9 +105,6 @@
 </head>
 <body>
   <div class="container">
-    <!-- Imagen en forma de corazón a la izquierda (fija) -->
-    <img class="heart-left" src="https://i.imgur.com/EvwfAj6.jpeg" alt="Corazón izquierdo">
-    
     <h1>Feliz Día Amor</h1>
     <p>
       Mi princesa, Feliz dia de San Valentin, estoy haciendo este detalle el 15 de Diciembre para poder enviartelo el dia 14/02, se que es 2 meses antes pero pienso hacer este mensaje web y tambien seguro te estare entregando un cauderno que tambien estoy comenzando hacerlo, espero que cuando lo veas te guste, porque lo hago con todo mi amor para tu Merly mi 👸❤️.
@@ -139,11 +119,11 @@
       <img src="https://i.imgur.com/Hw3H9Uj.jpeg" alt="Foto 1">
       <img src="https://i.imgur.com/9B4qF49.jpeg" alt="Foto 2">
       <img src="https://i.imgur.com/OBNq4wS.jpeg" alt="Foto 3">
+      <!-- Imágenes que estaban en los costados -->
+      <img src="https://i.imgur.com/EvwfAj6.jpeg" alt="Corazón izquierdo">
+      <img src="https://i.imgur.com/4oyRX8j.jpeg" alt="Corazón derecho">
     </div>
     <div class="date">01/01/2024 - 14/02/2025</div>
-
-    <!-- Imagen en forma de corazón a la derecha (fija) -->
-    <img class="heart-right" src="https://i.imgur.com/4oyRX8j.jpeg" alt="Corazón derecho">
   </div>
 
   <!-- Efectos de corazones y rosas -->
